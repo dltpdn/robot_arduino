@@ -1,11 +1,11 @@
-#define PIN_X  0
-#define PIN_Y  1
+#define PIN_X  A0
+#define PIN_Y  A1
 #define PIN_SW 2
 
 int x, y, sw;
 
 void setup() {
-  pinMode(PIN_SW, INPUT);
+  pinMode(PIN_SW, INPUT_PULLUP);
   Serial.begin(9600);
 }
 
