@@ -9,7 +9,7 @@ void setup() {
 
 void loop() {
 	v = analogRead(PIN_RES);
-	analogWrite(PIN_LED, v/4)
+	analogWrite(PIN_LED, v/4);
  	Serial.println(v);
  	delay(500);
 }
