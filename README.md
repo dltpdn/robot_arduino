@@ -72,6 +72,7 @@
 ## Library Links
 * DHT11 Sales : https://learn.adafruit.com/dht/overview
 * DHT11 Library : https://github.com/adafruit/DHT-sensor-library
+* Adafruit Driver : https://github.com/adafruit/Adafruit_Sensor
 
 ## 전자 부품 판매 쇼핑몰
 * 전문가용
