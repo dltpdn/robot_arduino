@@ -62,12 +62,28 @@
 	* [PCB 서포터30m 4개](http://mechasolution.com/shop/goods/goods_view.php?goodsno=8172&category=134006)
 	* 볼트 M3 4mm 8개
 	* 설명서 1매
-
+	* 전체 패키지 판매 사이트
+		* http://storefarm.naver.com/mundolino/products/300045771
+		* http://www.gameplusedu.com/shop/goods/goods_view.php?goodsno=1504&category=024002
+		* http://stores.auction.co.kr/scipia/List?category=02000000&CategoryType=Shop&DisplayType=None&SortType=None
+		* http://voie.comtong.co.kr/product/detail.html?product_no=620534&cate_no=1161&display_group=1
+		* http://simpstore.com/goods/goods_view.php?goodsNo=1000000003
 	
 ## Library Links
 * DHT11 Sales : https://learn.adafruit.com/dht/overview
 * DHT11 Library : https://github.com/adafruit/DHT-sensor-library
-## 참고 URL Links
+
+## 전자 부품 판매 쇼핑몰
+* 전문가용
+	* Eleparts : https://www.devicemart.co.kr/
+	* Device Mart : https://www.devicemart.co.kr/
+	* ICBanq : http://www.icbanq.com/
+* 입문자용
+	* 메카솔루션 : http://mechasolution.com/shop/main/index.php
+	* 문돌리노 : http://storefarm.naver.com/mundolino
+	* 아트로봇 : http://artrobot.co.kr/
+
+## Reference Sites URL Links
 * chatbot (Cleverbot) : https://www.youtube.com/watch?v=WnzlbyTZsQY
 * NAO Aldebaran Robotics : https://www.youtube.com/watch?v=nNbj2G3GmAo
 * Personal Robot PR2 : https://www.youtube.com/watch?v=7d0cE46XNAM
@@ -80,3 +96,7 @@
 * 전동기 :
   * https://www.youtube.com/watch?v=ormeOcIvbVQ
   * https://www.youtube.com/watch?v=Nt9BsT7HkiA
+* MeArm : http://learn.mime.co.uk/#hw=mearm
+	* http://learn.mime.co.uk/docs/building-the-mearm-deluxe/
+	* http://learn.mime.co.uk/assets/docs/control-your-mearm-from-arduino/MeArm_v1.0_Manual_for_Arduino_v1.0.pdf
+
