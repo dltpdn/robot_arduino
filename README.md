@@ -11,13 +11,13 @@
 
 ## Hardware Parts List
 * 재사용 부품 패키지 A
-	* 아두이노 우노 보드
-	* 정밀 드라이버(일자, 십자)
-	* 온도센서(DHT11)
-	* 조이스틱 X 2
-	* 브레드보드 (half)
-	* 모터드라이버(L298n)
-	* USB Cable 1m
+	* [아두이노 우노 보드](http://mechasolution.com/shop/goods/goods_view.php?goodsno=71796&category=117001)
+	* [정밀 드라이버(일자, 십자)](http://www.daisomall.co.kr/shop/goods_view.php?id=0000079820&search_text=%EC%A0%95%EB%B0%80%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84)
+	* [온도센서(DHT11)](http://storefarm.naver.com/mundolino/products/330773263?NaPm=ct%3Dj1uv9v1h%7Cci%3Dcheckout%7Ctr%3Dmyc%7Ctrx%3D%7Chk%3D95eeb71c9f8b20bfd144a2149fa353077a87d955)
+	* [조이스틱 X 2](http://mechasolution.com/shop/goods/goods_view.php?&goodsno=712)
+	* [브레드보드 (half)](http://mechasolution.com/shop/goods/goods_view.php?goodsno=7&category=134001)
+	* [모터드라이버(L298n)](http://mechasolution.com/shop/goods/goods_view.php?goodsno=1221&category=131014)
+	* [USB Cable A-B Type 1m](http://mechasolution.com/shop/goods/goods_view.php?goodsno=7655&category=136007)
 * 재사용 부품 패키지 B
 	*브레드보드(mini)
 	* 9V 배럴잭
