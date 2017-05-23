@@ -63,6 +63,10 @@
 	* 볼트 M3 4mm 8개
 	* 설명서 1매
 
+	
+## Library Links
+* DHT11 Sales : https://learn.adafruit.com/dht/overview
+* DHT11 Library : https://github.com/adafruit/DHT-sensor-library
 ## 참고 URL Links
 * chatbot (Cleverbot) : https://www.youtube.com/watch?v=WnzlbyTZsQY
 * NAO Aldebaran Robotics : https://www.youtube.com/watch?v=nNbj2G3GmAo
