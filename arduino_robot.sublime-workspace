@@ -24,98 +24,49 @@
 	"buffers":
 	[
 		{
-			"file": "07.bluetooth/config.ino",
-			"settings":
-			{
-				"buffer_size": 291,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "07.bluetooth/bt_led.ino",
-			"settings":
-			{
-				"buffer_size": 513,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "08.car/drive_serial.ino",
-			"settings":
-			{
-				"buffer_size": 1129,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "08.car/drive_sonic.ino",
-			"settings":
-			{
-				"buffer_size": 1821,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "09.arm/calibration.ino",
-			"settings":
-			{
-				"buffer_size": 277,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "09.arm/arm_joystic.ino",
-			"settings":
-			{
-				"buffer_size": 1529,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "09.arm/arm_bluetooth.ino",
-			"settings":
-			{
-				"buffer_size": 1828,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "10.finanl/final.ino",
-			"settings":
-			{
-				"buffer_size": 3633,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
+			"contents": "# Robotics with Arduino\n안녕하세요? 이세우입니다.\n아두이노를 이용해서 로보틱스를 배우기 위한 과정을 위한 Repository입니다.\n\n즐겁고 유익한 교육이 되도록 노력하겠습니다.\n\n## Software Download Links\n\n* Arduino IDE : https://www.arduino.cc/\n* Sublime Text 3 : https://www.sublimetext.com/3\n* Stino : https://github.com/Robot-Will/Stino\n\n## Hardware Parts List\n* 재사용 부품 패키지 A\n\t* [아두이노 우노 보드](http://mechasolution.com/shop/goods/goods_view.php?goodsno=71796&category=117001)\n\t* [정밀 드라이버(일자, 십자)](http://www.daisomall.co.kr/shop/goods_view.php?id=0000079820&search_text=%EC%A0%95%EB%B0%80%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84)\n\t* [온도센서(DHT11)](http://storefarm.naver.com/mundolino/products/330773263?NaPm=ct%3Dj1uv9v1h%7Cci%3Dcheckout%7Ctr%3Dmyc%7Ctrx%3D%7Chk%3D95eeb71c9f8b20bfd144a2149fa353077a87d955)\n\t* [조이스틱 X 2](http://mechasolution.com/shop/goods/goods_view.php?&goodsno=712)\n\t* [브레드보드 (half)](http://mechasolution.com/shop/goods/goods_view.php?goodsno=7&category=134001)\n\t* [모터드라이버(L298n)](http://mechasolution.com/shop/goods/goods_view.php?goodsno=1221&category=131014)\n\t* [USB Cable A-B Type 1m](http://mechasolution.com/shop/goods/goods_view.php?goodsno=7655&category=136007)\n* 재사용 부품 패키지 B\n\t* [브레드보드(mini)](http://mechasolution.com/shop/goods/goods_view.php?goodsno=181&category=134001)\n\t* [9V 배럴잭](http://mechasolution.com/shop/goods/goods_view.php?goodsno=33&category=136010)\n\t* [초음파 센서(SR04)](http://mechasolution.com/shop/goods/goods_view.php?&goodsno=119)\n\t* [블루투스(HC-06)](http://mechasolution.com/shop/goods/goods_view.php?goodsno=71794&category=054001)\n\t* [조도센서(CDS)](http://mechasolution.com/shop/goods/goods_view.php?goodsno=127751&category=129004)\n\t* [로터리 가변저항(10k)](http://mechasolution.com/shop/goods/goods_view.php?goodsno=8341&category=044016003)\n\t* [터미널 블럭](http://mechasolution.com/shop/goods/goods_view.php?goodsno=330571&category=061006)\n* 1회용 부품 패키지 2개\n  \t* [점퍼케이블 (M-M) 20cm](http://mechasolution.com/shop/goods/goods_view.php?goodsno=540035&category=129003)\n\t* [점퍼케이블(F-M)20cm](http://mechasolution.com/shop/goods/goods_view.php?goodsno=540035&category=129003)\n\t* [점퍼케이블(F-F)20cm](http://mechasolution.com/shop/goods/goods_view.php?&goodsno=540335)\n\t* [LED](http://mechasolution.com/shop/goods/goods_view.php?goodsno=65&category=052001)\n\t* [버튼 스위치](http://www.eleparts.co.kr/front/basket.php)\n\t* [고정저항(220Ohm)](http://mechasolution.com/shop/goods/goods_view.php?goodsno=924&category=044016) \n\t* [고정저항(10kOhm)](http://mechasolution.com/shop/goods/goods_view.php?goodsno=940&category=044016)\n\t* [9V 건전지 1개](http://mechasolution.com/shop/goods/goods_view.php?goodsno=539736&category=135001)\n\t* [1.5 AA 건전지 4개](http://mechasolution.com/shop/goods/goods_view.php?goodsno=772&category=135001)\n* [2륜차 패키지 2개](http://mechasolution.com/shop/goods/goods_view.php?goodsno=329290&category=140012)\t\n  \t* 아크릴 샤시\n\t* 휠 2개\n\t* DC 모터 기어 박스 2개\n\t* 배터리 홀더\n\t* 캐스터\n\t* 인코더 디스크\n\t* M3 * 30 볼트 4개\n\t* 스위치 1개\n\t* 아크릴 고정쇠 4개\n\t* M3 8mm 볼트 8개\n\t* M3 너트 6개\n\t* 스페이서 4개\n\t* 설명서 1매\n* 로봇암 패키지 2개\t\n  \t* 아크릴 부품 36PCS\n\t* [서보모터 SG-90 4개](http://mechasolution.com/shop/goods/goods_view.php?goodsno=71795&category=131006)\n\t* [너트 M3 10개](http://mechasolution.com/shop/goods/goods_view.php?goodsno=329807&category=134004002)\n\t* [볼트 M3-6mm 6개](http://mechasolution.com/shop/goods/goods_view.php?goodsno=427406&category=134004001)\n\t* [볼트 M3-8mm 15개](http://mechasolution.com/shop/goods/goods_view.php?goodsno=330463&category=134004001)\n\t* [볼트 M3-10mm 3개](http://mechasolution.com/shop/goods/goods_view.php?goodsno=329818&category=134004001)\n\t* [볼트 M3-12mm 8개](http://mechasolution.com/shop/goods/goods_view.php?goodsno=329819&category=134004001)\n\t* [볼트 M3-20mm 4개](http://mechasolution.com/shop/goods/goods_view.php?goodsno=329820&category=134004001)\n\t* [PCB 서포터30m 4개](http://mechasolution.com/shop/goods/goods_view.php?goodsno=8172&category=134006)\n\t* 볼트 M3 4mm 8개\n\t* 설명서 1매\n\t* 전체 패키지 판매 사이트\n\t\t* http://storefarm.naver.com/mundolino/products/300045771\n\t\t* http://www.gameplusedu.com/shop/goods/goods_view.php?goodsno=1504&category=024002\n\t\t* http://stores.auction.co.kr/scipia/List?category=02000000&CategoryType=Shop&DisplayType=None&SortType=None\n\t\t* http://voie.comtong.co.kr/product/detail.html?product_no=620534&cate_no=1161&display_group=1\n\t\t* http://simpstore.com/goods/goods_view.php?goodsNo=1000000003\n\t\n## Library Links\n* DHT11 Sales : https://learn.adafruit.com/dht/overview\n* DHT11 Library : https://github.com/adafruit/DHT-sensor-library\n* Adafruit Driver : https://github.com/adafruit/Adafruit_Sensor\n\n## 전자 부품 판매 쇼핑몰\n* 전문가용\n\t* Eleparts : https://www.devicemart.co.kr/\n\t* Device Mart : https://www.devicemart.co.kr/\n\t* ICBanq : http://www.icbanq.com/\n* 입문자용\n\t* 메카솔루션 : http://mechasolution.com/shop/main/index.php\n\t* 문돌리노 : http://storefarm.naver.com/mundolino\n\t* 아트로봇 : http://artrobot.co.kr/\n\n## Reference Sites URL Links\n* chatbot (Cleverbot) : https://www.youtube.com/watch?v=WnzlbyTZsQY\n* NAO Aldebaran Robotics : https://www.youtube.com/watch?v=nNbj2G3GmAo\n* Personal Robot PR2 : https://www.youtube.com/watch?v=7d0cE46XNAM\n* 독일 뮌헨 공대 키친 로봇 : https://www.youtube.com/watch?v=gbIDPqb_2iM\n* Delivery Robots Bots : https://www.youtube.com/watch?v=--WNlf541yE\n* Pepper : https://www.youtube.com/watch?v=NlUoptY0g18  https://www.youtube.com/watch?v=DJwNoaCN0TY\n* Sofia : https://www.youtube.com/watch?v=oFzaaJSEAF8\n* boston dynamics : https://www.youtube.com/watch?v=rVlhMGQgDkY\n* iCub (EU) : https://www.youtube.com/watch?v=ZcTwO2dpX8A\n* 전동기 :\n  * https://www.youtube.com/watch?v=ormeOcIvbVQ\n  * https://www.youtube.com/watch?v=Nt9BsT7HkiA\n* MeArm : http://learn.mime.co.uk/#hw=mearm\n\t* http://learn.mime.co.uk/docs/building-the-mearm-deluxe/\n\t* http://learn.mime.co.uk/assets/docs/control-your-mearm-from-arduino/MeArm_v1.0_Manual_for_Arduino_v1.0.pdf\n\n",
 			"file": "README.md",
+			"file_size": 6489,
+			"file_write_time": 131400232923761269,
 			"settings":
 			{
-				"buffer_size": 112,
+				"buffer_size": 5689,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/Nodejs/Nodejs.sublime-build",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Packages/Nodejs/Nodejs.sublime-build",
+					""
+				],
+				[
+					"Packages/User/chrome.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Nodejs/Nodejs.sublime-build",
+				""
+			]
+		]
 	],
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 58.0,
-		"last_filter": "",
+		"height": 357.0,
+		"last_filter": "pack in",
 		"selected_items":
 		[
+			[
+				"pack in",
+				"Package Control: Install Package"
+			],
 			[
 				"enable",
 				"Package Control: Enable Package"
@@ -197,10 +148,28 @@
 	},
 	"expanded_folders":
 	[
+		"/C/Users/dltpd/Dropbox/Lecture/curriculum/arduino/textbook/robot_rapa/lab",
 		"/C/Users/dltpd/Dropbox/Lecture/curriculum/arduino/textbook/robot_rapa/lab/10.finanl"
 	],
 	"file_history":
 	[
+		"/C/Users/dltpd/Dropbox/Lecture/curriculum/arduino/textbook/robot_rapa/lab/08.car/drive_serial.ino",
+		"/C/Users/dltpd/Dropbox/Lecture/curriculum/arduino/textbook/robot_rapa/lab/07.bluetooth/config.ino",
+		"/C/Users/dltpd/Dropbox/Lecture/curriculum/arduino/textbook/robot_rapa/lab/07.bluetooth/bt_led.ino",
+		"/C/Users/dltpd/Dropbox/Lecture/curriculum/arduino/textbook/robot_rapa/lab/08.car/drive_sonic.ino",
+		"/C/Users/dltpd/Dropbox/Lecture/curriculum/arduino/textbook/robot_rapa/lab/09.arm/calibration.ino",
+		"/C/Users/dltpd/Dropbox/Lecture/curriculum/arduino/textbook/robot_rapa/lab/09.arm/arm_joystic.ino",
+		"/C/Users/dltpd/Dropbox/Lecture/curriculum/arduino/textbook/robot_rapa/lab/09.arm/arm_bluetooth.ino",
+		"/C/Users/dltpd/Dropbox/Lecture/curriculum/arduino/textbook/robot_rapa/lab/10.finanl/final.ino",
+		"/C/Users/dltpd/Dropbox/Lecture/curriculum/arduino/textbook/robot_rapa/lab/README.md",
+		"/C/Users/dltpd/Dropbox/Lecture/curriculum/javascript/lab/day1/WebContent/array.html",
+		"/C/Users/dltpd/Dropbox/Lecture/curriculum/javascript/lab/server.js",
+		"/C/Users/dltpd/AppData/Roaming/Sublime Text 3/Packages/User/chrome.sublime-build",
+		"/C/Users/dltpd/Dropbox/Lecture/curriculum/javascript/lab/package.json",
+		"/C/Users/dltpd/AppData/Roaming/Sublime Text 3/Packages/Nodejs/Nodejs.sublime-settings",
+		"/C/Users/dltpd/Dropbox/Lecture/curriculum/javascript/lab/node_modules/serve-index/public/style.css",
+		"/C/Users/dltpd/AppData/Roaming/Sublime Text 3/Packages/Nodejs/Default (Windows).sublime-keymap",
+		"/C/Users/dltpd/AppData/Roaming/Sublime Text 3/Packages/User/Nodejs.sublime-settings",
 		"/C/Users/dltpd/Dropbox/Lecture/curriculum/arduino/textbook/robot_rapa/lab/06.serial/spi_master.ino",
 		"/C/Users/dltpd/Dropbox/Lecture/curriculum/arduino/textbook/robot_rapa/lab/06.serial/spi_slave.ino",
 		"/C/Users/dltpd/Dropbox/Lecture/curriculum/arduino/textbook/robot_rapa/lab/04.motor/motor.ino",
@@ -250,6 +219,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"console",
 			"interval",
 			"LED",
 			"PIN_REG",
@@ -287,903 +257,29 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "07.bluetooth/config.ino",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 291,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								291,
-								291
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"open_with_edit": true,
-							"syntax": "Packages/Stino-Stino-Dev/Arduino.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "07.bluetooth/bt_led.ino",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 513,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								113,
-								113
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"open_with_edit": true,
-							"syntax": "Packages/Stino-Stino-Dev/Arduino.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "08.car/drive_serial.ino",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1129,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								566,
-								566
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										567,
-										568
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										460,
-										461
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"open_with_edit": true,
-							"syntax": "Packages/Stino-Stino-Dev/Arduino.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "08.car/drive_sonic.ino",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1821,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1141,
-								1141
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										1140,
-										1141
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/round_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										1137,
-										1138
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"open_with_edit": true,
-							"syntax": "Packages/Stino-Stino-Dev/Arduino.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 912.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "09.arm/calibration.ino",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 277,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								277,
-								277
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"open_with_edit": true,
-							"syntax": "Packages/Stino-Stino-Dev/Arduino.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "09.arm/arm_joystic.ino",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1529,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1272,
-								1272
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										1391,
-										1392
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										1191,
-										1192
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"open_with_edit": true,
-							"syntax": "Packages/Stino-Stino-Dev/Arduino.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 702.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "09.arm/arm_bluetooth.ino",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1828,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								222,
-								222
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"open_with_edit": true,
-							"syntax": "Packages/Stino-Stino-Dev/Arduino.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "10.finanl/final.ino",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3633,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								627,
-								627
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"open_with_edit": true,
-							"syntax": "Packages/Stino-Stino-Dev/Arduino.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
 					"file": "README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 112,
+						"buffer_size": 5689,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								112,
-								112
+								139,
+								139
 							]
 						],
 						"settings":
 						{
+							"auto_complete": true,
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
@@ -1202,26 +298,6 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -1232,6 +308,11 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -1242,27 +323,42 @@
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
-								"bh_angle_content"
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
-							"open_with_edit": true,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 126.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1302,6 +398,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
