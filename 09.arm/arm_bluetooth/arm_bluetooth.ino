@@ -2,14 +2,16 @@
 #include <SoftwareSerial.h>
 
 #define SERVO_CNT 4
-#define STEP 1
-#define MAX_IDLE_TIME 5000
+#define STEP 5
+#define MAX_IDLE_TIME 5000  //ms, 0:infinity
 #define RX 2
 #define TX 3
 
 SoftwareSerial bt(RX, TX);
-int d_pin[SERVO_CNT], value[SERVO_CNT], last_idle_time[SERVO_CNT], curr_angle[SERVO_CNT], min_angle[SERVO_CNT];
+
+int d_pin[SERVO_CNT], value[SERVO_CNT] , curr_angle[SERVO_CNT], min_angle[SERVO_CNT];
 int max_angle[SERVO_CNT], init_angle[SERVO_CNT], prev_angle[SERVO_CNT];
+unsigned long last_running_time;
 Servo servos[SERVO_CNT];
 char cmd ;
 int target;
@@ -18,7 +20,7 @@ boolean up_down;
 void setup(){
   Serial.begin(9600);
   bt.begin(9600);
-
+  Serial.println("ready..");
   //Middle
   d_pin[0] = 11;
   min_angle[0] = 0;
@@ -48,16 +50,17 @@ void setup(){
     servos[i].write(init_angle[i]);
     value[i] = 0;
     prev_angle[i] = init_angle[i];
-    last_idle_time[i] = millis();
   }
+  last_running_time = millis();
+  Serial.println(last_running_time);
+  Serial.println(millis());
+
 }
 
 
 void loop() {
-  delay(10);
-
-  if (Serial.available() > 0) {
-    cmd = Serial.read();
+  if (bt.available() > 0) {
+    cmd = bt.read();
 
     if (cmd == 'm' || cmd == 'M') {
       target = 0;
@@ -83,18 +86,26 @@ void loop() {
             curr_angle[target] -= STEP;
       }
     }
-    if(curr_angle != prev_angle){
+    if(curr_angle[target] != prev_angle[target]){
+      Serial.print(target);
+      Serial.print(":");
+      Serial.println(curr_angle[target]);
+
       if (!servos[target].attached()){
         servos[target].attach(d_pin[target]);
       }
       servos[target].write(curr_angle[target]);
+      last_running_time = millis();
     }
 
   }// end of Serial.available
 
-  for(int i=0; i<SERVO_CNT; i++){
-    if (last_idle_time[i] - millis() > MAX_IDLE_TIME){
-      servos[i].detach(); // 서보모터를 일정시간 사용하지 않으면 연결을 끊어둔다.
+  if (MAX_IDLE_TIME != 0 && (millis() - last_running_time) > MAX_IDLE_TIME){
+    for(int i=0; i<SERVO_CNT; i++){
+      if(servos[i].attached()){
+       servos[i].detach(); // 서보모터를 일정시간 사용하지 않으면 연결을 끊어둔다.
+      }
     }
   }
 }//end of loop
+ 

@@ -1,13 +1,13 @@
 #include <Servo.h>
 #define SERVO_CNT  4
 #define STEP  1
-#define UP_THESHOLD 650
-#define DN_THESHOLD 450
-#define MAX_IDLE_TIME 1000
+#define UP_THESHOLD 700
+#define DN_THESHOLD 400
+#define MAX_IDLE_TIME 5000 //ms, 0:infinity
 
 int d_pin[SERVO_CNT], a_pin[SERVO_CNT], init_angle[SERVO_CNT], min_angle[SERVO_CNT], max_angle[SERVO_CNT];
 int value[SERVO_CNT], curr_angle[SERVO_CNT], prev_angle[SERVO_CNT];
-unsigned long last_idle_time[SERVO_CNT];
+unsigned long last_running_time;
 
 Servo servos[SERVO_CNT];
 
@@ -47,10 +47,9 @@ void setup(){
 		servos[i].attach(d_pin[i]);
 		servos[i].write( init_angle[i]);
 		value[i] = 0;
-		last_idle_time[i] = 0;
 		prev_angle[i] =  init_angle[i];
-		last_idle_time[i] = millis();
 	}
+	last_running_time = millis();
 }
 
 void loop(){
@@ -58,7 +57,7 @@ void loop(){
 
 	for (int i = 0; i < SERVO_CNT; i++){
 		value[i] = analogRead(a_pin[i]);
-		curr_angle[i] = servos[i].read();
+		curr_angle[i] = prev_angle[i] = servos[i].read();
 
 		if(value[i] > UP_THESHOLD){
 			if(curr_angle[i] <  max_angle[i])
@@ -68,14 +67,18 @@ void loop(){
 					curr_angle[i] -= STEP;
 		}
 		
-		if(prev_angle != curr_angle){
+		if(prev_angle[i] != curr_angle[i]){
+			Serial.print(i);
+			Serial.print(":");
+			Serial.println(curr_angle[i]);
+
 			if(!servos[i].attached()){
 				servos[i].attach(d_pin[i]);
 			}
 			servos[i].write(curr_angle[i]);
-			last_idle_time[i] = millis();
+			last_running_time = millis();
 		}
-		if (last_idle_time[i] - millis() > MAX_IDLE_TIME){
+		if (MAX_IDLE_TIME != 0 && (millis() - last_running_time) > MAX_IDLE_TIME && servos[i].attached()){
 			servos[i].detach(); // 서보모터를 일정시간 사용하지 않으면 연결을 끊어둔다.
 		}
 	}

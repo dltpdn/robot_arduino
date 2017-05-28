@@ -5,7 +5,7 @@
 
 #define SERVO_CNT 4
 #define STEP 5
-#define MAX_IDLE_TIME 1000
+#define MAX_IDLE_TIME 5000 //ms, 0:infinity
 
 #define PIN_MOTOR1 13
 #define PIN_MOTOR2 12
@@ -26,7 +26,7 @@
 
 int d_ping[SERVO_CNT], value[SERVO_CNT],  curr_angle[SERVO_CNT], min_angle[SERVO_CNT];
 int max_analge[SERVO_CNT], init_angle[SERVO_CNT], prev_angle[SERVO_CNT];
-unsigned long last_idle_time[SERVO_CNT];
+unsigned long last_running_time;
 
 char cmd ;
 int target;
@@ -44,7 +44,7 @@ void init_servo(int idx, int pin, int min, int max, int init) {
   servos[idx].write(init);
   value[idx] = 0;
   prev_angle[idx] = init;
-  last_idle_time[idx] = millis();
+  last_running_time = millis();
 }
 
 void setup() {
@@ -109,7 +109,7 @@ void loop() {
       } else if (cmd == '6') {
         turn_right();
       }
-    }else if(cmd =='m' || cmd=='M' || cmd =='l' || cmd == 'L' || cmd =='r' || cmd == 'R' || cmd =="c" || cmd=='C'){
+    }else if(cmd =='m' || cmd=='M' || cmd =='l' || cmd == 'L' || cmd =='r' || cmd == 'R' || cmd =='c' || cmd=='C'){
       if (cmd == 'm' || cmd == 'M') {
         target = 0;
         up_down = cmd == 'm' ? false : true;
@@ -134,15 +134,17 @@ void loop() {
           servos[target].attach(d_ping[target]);
         }
         servos[target].write(curr_angle[target]);
-        last_idle_time[target] = millis();
+        last_running_time = millis();
       }
       Serial.println(curr_angle[target]);
     }
   }// end of bt.available()
   
-  for(int j=0; j<SERVO_CNT; j++){
-    if( (millis() - last_idle_time[j]) > MAX_IDLE_TIME && servos[j].attached()){
-      servos[j].detach();
+  if(MAX_IDLE_TIME != 0 &&  (millis() - last_running_time) > MAX_IDLE_TIME){
+    for(int j=0; j<SERVO_CNT; j++){
+      if(servos[j].attached()){
+        servos[j].detach();
+      }
     }
   }
 }
