@@ -9,6 +9,7 @@
 * Arduino IDE : https://www.arduino.cc/
 * Sublime Text 3 : https://www.sublimetext.com/3
 * Stino : https://github.com/Robot-Will/Stino
+* Arduino PWM Frequency Library : https://code.google.com/archive/p/arduino-pwm-frequency-library/downloads
 
 ## Hardware Parts List
 * 재사용 부품 패키지 A
