@@ -99,7 +99,8 @@
 * 전동기 :
   * https://www.youtube.com/watch?v=ormeOcIvbVQ
   * https://www.youtube.com/watch?v=Nt9BsT7HkiA
-* MeArm : http://learn.mime.co.uk/#hw=mearm
+* 로봇팔(MeArm) : http://learn.mime.co.uk/#hw=mearm
 	* http://learn.mime.co.uk/docs/building-the-mearm-deluxe/
 	* http://learn.mime.co.uk/assets/docs/control-your-mearm-from-arduino/MeArm_v1.0_Manual_for_Arduino_v1.0.pdf
+	* 조립 영상 : https://www.youtube.com/watch?v=LIzmUVRrZrg
 
